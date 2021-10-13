@@ -6,6 +6,13 @@ experimentally_determined_start_strengths <- function(){
     dplyr::mutate(StartCodon=substr(TIS.Sequence, 5, 7))
 }
 
+#' Distributions of non-AUG start codon translation efficiency
+#'
+#' @return visual summary of distribution of translation efficiencies of different start codons based on 8bp sequence context (ggplot)
+#' @export
+#'
+#' @examples
+#' plot_distributions_experimentally_determined_start_strengths()
 plot_distributions_experimentally_determined_start_strengths <- function(){
   experimentally_determined_start_strengths() %>%
     ggplot2::ggplot(ggplot2::aes(TIS.Efficiency)) +

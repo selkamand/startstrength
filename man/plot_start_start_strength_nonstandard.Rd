@@ -17,5 +17,5 @@ Use sequence context to identify the EXPERIMENTALLY determined tranlsation initi
 Built using data from DOI: 10.1093/nar/gkx1114 . Please cite if you find this tool useful
 }
 \examples{
-start_strength_nonstandard("TACTTTGG")
+plot_start_start_strength_nonstandard("TACTTTGG")
 }
