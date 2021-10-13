@@ -70,7 +70,7 @@ start_strength_nonstandard <- function(input_sequence){
 #' @export
 #'
 #' @examples
-#' start_strength_nonstandard("TACTTTGG")
+#' plot_start_start_strength_nonstandard("TACTTTGG")
 plot_start_start_strength_nonstandard <- function(input_sequence) {
   start_strengths_database_df <- experimentally_determined_start_strengths()
 
