@@ -1,23 +1,45 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
 # startstrength
-R package for determining start strength of non-AUG start codons
+
+<!-- badges: start -->
+
+<!-- badges: end -->
+
+R package for rapid lookup of the experimentally determined translation
+initiation start-site (TIS) efficiency of non-AUG start codons (taking
+into account their sequence context).
+
+This package was originally designed for investigating the likelihood of
+[leaky scanning](https://en.wikipedia.org/wiki/Leaky_scanning) to
+explain production of an unexpected protein. For example, if the
+canonical transcript start codon is weak, and there is an internal start
+codon with high translation initiation efficiency, it is possible for
+the ribosome to skip over the first start codon and start translation at
+the second.
 
 # Installation
-```
-install.packages("remotes");
-remotes::install_github("selkamand/startstrength")
-```
+
+    install.packages("remotes");
+    remotes::install_github("selkamand/startstrength")
 
 # Usage
 
-For a visual summary
-```
-plot_start_start_strength_nonstandard("TACTTTGG")
-```
+Please make sure all input sequences are 8bp long with start codon in
+pos 5bp-7bp, for example AAAA\[UUG\]A (no square brackets should be
+included)
+
+To produce a visual summary
+
+    plot_start_start_strength_nonstandard("TACTTTGG")
 
 For basic tabular results
-```
-start_strength_nonstandard("TACTTTGG")
-```
+
+    start_strength_nonstandard("TACTTTGG")
 
 # Citing
-Built using data from DOI: 10.1093/nar/gkx1114. Please cite if you find this tool useful
+
+Simple lookup of data from [Diaz de Arce et al.,
+2018](https://doi.org/10.1093/nar/gkx1114). Please cite this paper if
+you find **startstrength** useful.
